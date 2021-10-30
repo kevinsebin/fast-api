@@ -1,5 +1,4 @@
-from fastapi import FastAPI, Path
-import uvicorn
+from fastapi import FastAPI
 
 app = FastAPI()
 
@@ -15,4 +14,3 @@ def percent(first, second):
     return {'percent' : percent}
 
 
-uvicorn.run(app)
